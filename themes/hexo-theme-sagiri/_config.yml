@@ -67,11 +67,11 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   首页: / || fas fa-meteor
-  实验室: javascript:; || fas fa-magic
+  # 实验室: javascript:; || fas fa-magic
   归档: /archives/ || fas fa-archive
-  后宫: /friends/ || fas fa-mars-stroke
+  # 后宫: /friends/ || fas fa-mars-stroke
   # 留言板: /message/ || fas fa-comment-dots
-  手办柜: /gk/ || fas fa-child
+  # 手办柜: /gk/ || fas fa-child
   关于我: /about/ || fas fa-heartbeat
 
 submenu:
