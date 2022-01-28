@@ -109,4 +109,4 @@ theme: hexo-theme-sagiri
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    repo: 'http://1w5s342781.wicp.vip/gouzi/gouzi-hexo.git'
+    repo: 'git@1w5s342781.wicp.vip:gouzi/gouzi-hexo.git'
