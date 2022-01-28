@@ -42,7 +42,9 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+# Hexo将会在你每一次通过 hexo new [layout] <title> 命令创建新文章时自动创建一个文件夹。
+# 这个资源文件夹将会有与这个文章文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -106,4 +108,5 @@ theme: hexo-theme-sagiri
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: 'http://1w5s342781.wicp.vip/gouzi/gouzi-hexo.git'
