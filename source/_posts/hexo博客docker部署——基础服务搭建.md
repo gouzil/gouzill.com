@@ -1,6 +1,6 @@
 ---
 title: hexo博客docker部署——基础服务搭建
-date: 2022-01-29 19:56:07
+date: 2022-01-20 19:56:07
 id: 1643457367
 tags:
   - docker
@@ -8,7 +8,7 @@ tags:
 categories:
   - 博客
 keywords: hexo,docker
-description: 简单的hexo个人博客搭建
+description: hexo个人博客docker搭建(1)
 ---
 
 ### 使用dockerfile构建镜像
