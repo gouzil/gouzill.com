@@ -1,8 +1,5 @@
 pages:
   script:
-    - hexo-build build
-  artifacts:
-    paths:
-      - public
+    - hexo-build bd
   only:
     - master
