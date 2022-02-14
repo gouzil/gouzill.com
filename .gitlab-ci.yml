@@ -1,5 +1,10 @@
-pages:
-  script:
-    - hexo-build bd
-  only:
-    - master
+stages:
+  - hexo-build
+deploy:
+    stage: hexo-build
+    script:
+      - hexo-build build
+    only:
+      - master
+    tags:
+      - hexo
