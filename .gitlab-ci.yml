@@ -1,6 +1,6 @@
 stages:
   - hexo-build
-deploy:
+build:
     stage: hexo-build
     script:
       - hexo-build build
