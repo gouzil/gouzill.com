@@ -6,7 +6,7 @@ tags:
   - docker
   - hexo
 categories:
-  - 博客
+  - 教程
 keywords: hexo,docker
 description: hexo个人博客docker搭建(2)
 ---

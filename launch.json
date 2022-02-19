@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug Hexo via npm",
+        "cwd": "${workspaceFolder}",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": [
+          "run", "build"
+        ],
+        "console": "internalConsole",
+        "outputCapture": "std"
+      }
+    ]
+}
