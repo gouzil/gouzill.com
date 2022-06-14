@@ -1,8 +1,8 @@
 stages:
   - hexo-build
 
-install-module:
-  stage: install-module
+hexo-build:
+  stage: hexo-build
   script:
     - pwd
     - npm cache clean --force
