@@ -1,3 +1,7 @@
 #!/bin/bash
 
-docker build -t hexo-test:latest .
+# dev
+# docker build -t hexo-test:latest .
+
+# build online
+docker build -f Dockerfile-runner -t hexo-runner:latest .
