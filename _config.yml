@@ -14,7 +14,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://gouzill.com
 # url: http://192.168.0.114:4000
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -120,4 +120,25 @@ hide_posts:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    repo: 'http://1w5s342781.wicp.vip/gouzi/gouzi-hexo.git'
+    # repo: 'http://1w5s342781.wicp.vip/gouzi/gouzi-hexo.git'
+    repo: 'http://gitlab.gouzill.com/gouzi/gouzi-hexo.git'
+
+#Live2D动画
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-hijiki
+  display:
+    position: right 
+    width: 150
+    height: 300
+    hOffset: 60
+    vOffset: -50
+  mobile:
+    show: false

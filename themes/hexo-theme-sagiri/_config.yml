@@ -96,7 +96,7 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-# scheme: Muse
+#scheme: Muse
 #scheme: Mist
 scheme: Pisces
 #scheme: Gemini
@@ -262,7 +262,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night eighties
 
 
 # ---------------------------------------------------------------
@@ -347,9 +347,10 @@ han: false
 # Duoshuo ShortName
 #duoshuo_shortname:
 
+# 评论我没号就先关了
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname:
   count: false
 # Hypercomments
@@ -794,9 +795,9 @@ card:
   # name: <span style="opacity:.2;">网红</span>DIYgod
   description: 你能抓到我么？
   items:
-    最喜欢的作品: 青春猪头少年不会梦到兔女郎学姐
+    最喜欢的作品: 暂时没有
     最喜欢的女孩子: 等一个有缘人
-    最喜欢的游戏: 守望先锋、F1系列、极限竞速地平线系列、CSGO
+    最喜欢的游戏: 守望先锋、F1系列、极限竞速地平线系列、CSGO、3A
     装备: 一加5T、联想潮7000黑苹果、iPad Pro2017、<br>小米手环 3 NFC、 <br>iPhone6s plus
     工作: 当前 - 厦门某公司 & 开源作者<br>即将 - 备考升学
 
@@ -824,7 +825,7 @@ footer:
   # custom_text: 托管于<a href="https://github.com/" target="_blank" rel="nofollow"> GitHub</a>. <a href="https://www.upyun.com/" target="_blank" rel="nofollow">又拍云</a> 提供 CDN 服务. <a href="http://www.google.com/analytics/" target="_blank" rel="nofollow">Google Analytics </a>提供网站统计服务. <a href="https://www.cloudxns.net/" target="_blank" rel="nofollow">CloudXNS </a>提供 DNS 解析服务.
   sitemap: /sitemap.xml
 
-description: 写代码是热爱，写到世界充满爱！
+description: 哪有什么岁月静好，只是有人为你负重前行
 
 # Theme version
 version: 0.0.74

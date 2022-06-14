@@ -10,6 +10,10 @@
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
+  <!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+  <!--解析网易云-->
+  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}" class="theme-darling">
@@ -40,9 +44,10 @@
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-image">
+      <!--裙摆-->
+      <!--<div class="footer-image">
         <img src="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me@gh-pages/images/footer.png">
-      </div>
+      </div>-->
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
         {% include '_third-party/analytics/analytics-with-widget.swig' %}
@@ -102,5 +107,12 @@
       });
     }
   </script>
+  <!--播放器-->
+  <meting-js
+    fixed="true"
+    server="netease"
+    type="playlist"
+    id="7487605606">
+  </meting-js>
 </body>
 </html>
