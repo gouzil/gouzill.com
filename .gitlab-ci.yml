@@ -4,7 +4,6 @@ stages:
 hexo-build:
   stage: hexo-build
   script:
-    - pwd
     - npm cache clean --force
     - npm install
     - cd themes/hexo-theme-sagiri/
@@ -13,6 +12,7 @@ hexo-build:
     - cd ../../
     - ./node_modules/hexo/bin/hexo clean
     - ./node_modules/hexo/bin/hexo generate
+    - rm -rf /usr/blog/*
     - cp -r ./public /usr/blog
   only:
     - master
