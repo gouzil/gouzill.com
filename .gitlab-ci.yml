@@ -13,7 +13,7 @@ hexo-build:
     - ./node_modules/hexo/bin/hexo clean
     - ./node_modules/hexo/bin/hexo generate
     - rm -rf /usr/blog/public/*
-    - cp -r ./public/* /usr/blog
+    - cp -r ./public/* /usr/blog/public
   only:
     - master
   tags:
