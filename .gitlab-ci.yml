@@ -12,8 +12,8 @@ hexo-build:
     - cd ../../
     - ./node_modules/hexo/bin/hexo clean
     - ./node_modules/hexo/bin/hexo generate
-    - rm -rf /usr/blog/*
-    - cp -r ./public /usr/blog
+    - rm -rf /usr/blog/public/*
+    - cp -r ./public/* /usr/blog
   only:
     - master
   tags:
