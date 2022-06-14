@@ -1,5 +1,4 @@
 stages:
-  - install-module
   - hexo-build
 
 install-module:
@@ -12,17 +11,11 @@ install-module:
     - npm cache clean --force
     - npm install
     - cd ../../
+    - ./node_modules/hexo/bin/hexo clean
+    - ./node_modules/hexo/bin/hexo generate
+    - cp -r ./public /usr/blog
   only:
     - master
   tags:
     - hexo
 
-hexo-build:
-  stage: hexo-build
-  script:
-    - ./node_modules/hexo/bin/hexo clean
-    - ./node_modules/hexo/bin/hexo generate
-  only:
-    - master
-  tags:
-    - hexo
