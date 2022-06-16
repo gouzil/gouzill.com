@@ -14,7 +14,12 @@ RUN chmod +x /usr/local/bin/gitlab-runner
 RUN adduser -D -h /home/gitlab-runner -s /bin/sh gitlab
 RUN gitlab-runner install --user=gitlab --working-directory=/home/gitlab-runner
 RUN echo "#!/bin/sh" >> /start.sh
+RUN echo "gitlab-runner stop" >> /start.sh
+RUN echo "rm -rf /var/run/gitlab-runner.pid" >> /start.sh
 RUN echo "gitlab-runner start" >> /start.sh
+
+# 因为频繁掉线所以让他一个小时重启一次
+RUN echo "0       */1     *       *       *       /bin/sh /start.sh" >> /etc/crontabs/root 
 
 # 设置容器时区为上海，不然发布文章的时间是国际时间，也就是比我们晚8个小时
 RUN apk add tzdata && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \

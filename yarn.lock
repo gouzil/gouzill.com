@@ -395,7 +395,6 @@
   dependencies:
     "anymatch" "^1.3.0"
     "async-each" "^1.0.0"
-    "fsevents" "^1.0.0"
     "glob-parent" "^2.0.0"
     "inherits" "^2.0.1"
     "is-binary-path" "^1.0.0"
@@ -412,7 +411,6 @@
   dependencies:
     "anymatch" "~3.1.2"
     "braces" "~3.0.2"
-    "fsevents" "~2.3.2"
     "glob-parent" "~5.1.2"
     "is-binary-path" "~2.1.0"
     "is-glob" "~4.0.1"
@@ -790,7 +788,6 @@
     "estraverse" "^5.2.0"
     "esutils" "^2.0.2"
     "optionator" "^0.8.1"
-    "source-map" "~0.6.1"
   optionalDependencies:
     "source-map" "~0.6.1"
 
@@ -1122,10 +1119,6 @@
   "integrity" "sha1-shBrJlR7Iy8BlduGPLXV/4Un/TY="
   "resolved" "https://registry.npmmirror.com/hexo-bunyan/download/hexo-bunyan-1.0.0.tgz"
   "version" "1.0.0"
-  dependencies:
-    "moment" "^2.10.6"
-    "mv" "~2"
-    "safe-json-stringify" "~1"
   optionalDependencies:
     "moment" "^2.10.6"
     "mv" "~2"
@@ -1207,6 +1200,15 @@
   dependencies:
     "hexo-pagination" "1.0.0"
     "timsort" "^0.3.0"
+
+"hexo-generator-sitemap@^3.0.1":
+  "integrity" "sha512-n+0KLNmq6TLbiZPTQF6NY5MbEem/O+DFx0lgQZNQcU4tdjXIZRrQJs+KRKeT66NTkdlYTqb4WwCxswLqQz0crA=="
+  "resolved" "https://registry.npmmirror.com/hexo-generator-sitemap/-/hexo-generator-sitemap-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "hexo-util" "^2.1.0"
+    "micromatch" "^4.0.2"
+    "nunjucks" "^3.1.6"
 
 "hexo-generator-tag@^1.0.0":
   "integrity" "sha1-VOwj3pQJx1WE6oHjYFelkDGwIvE="
@@ -2081,7 +2083,7 @@
   "resolved" "https://registry.npmmirror.com/nprogress/download/nprogress-0.2.0.tgz"
   "version" "0.2.0"
 
-"nunjucks@^3.0.0", "nunjucks@^3.2.1":
+"nunjucks@^3.0.0", "nunjucks@^3.1.6", "nunjucks@^3.2.1":
   "integrity" "sha1-GzNhUkcpDpTigmO12FXs52VkijE="
   "resolved" "https://registry.npmmirror.com/nunjucks/download/nunjucks-3.2.3.tgz"
   "version" "3.2.3"

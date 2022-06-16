@@ -30,7 +30,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "DIYgod,blog"
+keywords: "Gouzi,blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -134,7 +134,7 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  DIYgos: https://diygod.me || https://diygod.me/images/Gouzi.jpg || Hi, DIYgod
+  DIYgos: http://gouzill.com || http://gouzill.com/images/Gouzi.jpg || Hi, Gouzi
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
