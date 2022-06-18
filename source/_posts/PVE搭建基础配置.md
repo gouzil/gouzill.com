@@ -47,7 +47,7 @@ apt upgrade -y
 网卡打开自启
 
 重启
-![](http://gouzill.com/2022/06/11/PVE%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/pve_eth.png)
+![](./pve_eth.png)
 
 使用`ethtool`命令进行查询网卡状态
 
