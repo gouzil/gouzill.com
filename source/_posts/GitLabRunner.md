@@ -56,7 +56,7 @@ docker run -dit \
 
 #### 注册runner
 ```bash
-gitlab-runner register --url http://gitlab.gouzill.com/ --registration-token $REGISTRATION_TOKEN
+gitlab-runner register --url https://www.example.com/ --registration-token $REGISTRATION_TOKEN
 
 # 一路回车
 # 提示这个的时候写shell, 根据你的需求来
