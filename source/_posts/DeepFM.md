@@ -33,28 +33,14 @@ description: 本项目使用推荐系统中的多个模型进行对比，并基�
 
 据统计，2019年全国广告市场总体规模达8674.28亿元，较上年增长了8.54%（见图1），占国民生产总值（GDP）的0.88%。如今广告成为各短视频平台最重要的收入来源。
 
-<center><img src='./doc/imgs/StatisticalData.png' width=600></center><center>图1.2009—2019中国广告经营额</center> 
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/a4782019f01e4e26b18203ad8eec5bb08987b2b0280d4c6b89f828b3e67a1693' width=600></center><center>图1.2009—2019中国广告经营额</center> 
 
 针对短视频、搜索、资讯等场景，应用飞桨[PaddleRec](https://github.com/PaddlePaddle/PaddleRec/tree/master)的推荐算法技术，对召回数据进行排序最终展现给用户，最大限度吸引用户、留存用户、增加用户粘性、提高用户转化率。
-<center><img src='./doc/imgs/logo.png' width=600></center>
-<center><img src='./doc/imgs/structure.png' width=600></center>
-<center><img src='./doc/imgs/overview.png' width=600></center>
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/eca0f4b4282c4b68bfd3b0a75af3335fb2ade2854352496590c603cb256ce8f7' width=600></center>
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/3955d77f23a046079d7fc06906522ea721c4e914c4694f6d812d4df01ae26b00' width=600></center>
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/4117c0da3f0140e591f514586a436196083315a0361c4ad68253fff7d5cd1239' width=600></center>
 
 <br/>
-
-#### **推荐系统大致流程**
-
-    ①产品接入推荐业务后
-
-    ②经过brpc进行请求
-
-    ③发送给服务器计算，得到点击概率值，筛选概率较低的值
-
-    ④结合召回系统进行内容融合，加入收益相关内容
-
-参考下图
-
-<center><img src='./doc/imgs/circuit.png' width=600></center>
 
 #### 架构介绍:
 
@@ -77,34 +63,48 @@ description: 本项目使用推荐系统中的多个模型进行对比，并基�
 
 参考下图
 
-<center><img src='./doc/imgs/Architectural perspective.png' width=600></center>
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/59921e93ded243289498638e8d94de4341a0a70b082b4310aa7f5695f3a92cbc' width=600></center>
 
 #### 个性化推荐:
 
-    ①从内容库选取大量数据
+①从内容库选取大量数据
 
-    ②召回系统根据用户画像和用户行为进行初步筛选
+②召回系统根据用户画像和用户行为进行初步筛选
 
-    ③通过粗排、精排选择预估更符合用户兴趣的  
+③通过粗排、精排选择预估更符合用户兴趣的
 
-    ④增加广告等内容，重新排序，最后呈现给用户
+④增加广告等内容，重新排序，最后呈现给用户
 
 参考下图
 
-<center><img src='./doc/imgs/Model perspective.png' width=600></center>
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/475bff5dc11a401c8771f410bd995ee1e35a3505029f453c8d3e68064fdf42ce' width=600></center>
 
-#### **方案难点**
+#### 推荐系统大致流程:
+ 
+①产品接入推荐业务后
+
+②经过brpc进行请求
+
+③发送给服务器计算，得到点击概率值，筛选概率较低的值
+
+④结合召回系统进行内容融合，加入收益相关内容
+
+参考下图
+
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/c7a51220180547a6812586383fdfb8679469323f4de54a6ba76257c72667459c' width=600></center>
+
+#### 方案难点
 
 * **推理速度要求高：** 在搜索中进行快速响应，增强用户使用体验，对模型推理速度有较高要求。
 * **推理准确度要求：** 在实际应用中推荐内容是否准确，对模型的精确度有一定的要求。
 * **推理召回率：** 根据用户的行为进行分析生成候选，再进行排序，最后呈现给用户。 
 * **在离线一致性：** 如下图
 
-<center><img src='./doc/imgs/whole_process.png' width=600></center>
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/05fd30f0305049b58ae1ce7e5c0d3ce754fe4f4aae324780a2a020662a002aca' width=600></center>
 
 #### **模型介绍**
 
-<center><img src='./doc/imgs/Wide & deep architecture of DeepFM.png' width=600></center>
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/641e6babf15741768a3abb6444045126b93d9985d4a84e269632e918e12b7775' width=600></center>
 
 其实DeepFM就是把Wide&Deep模型的wide部分改为了FM。
 
@@ -300,7 +300,7 @@ cd ~/
 
 本项目采用DeepFM作为点击率的模型，模型训练需要经过如下环节：
 
-<center><img src='./doc/imgs/FlowChart.png' width=600></center>
+<center><img src='https://ai-studio-static-online.cdn.bcebos.com/8d7f8d05693444ca995c6dfa3577c88825ce0d8fa5664da095b3852173d1c92c' width=600></center>
 
 [自定义数据集及Reader](https://github.com/PaddlePaddle/PaddleRec/blob/master/doc/custom_reader.md)、[自定义模型](https://github.com/PaddlePaddle/PaddleRec/blob/master/doc/model_develop.md)、[yaml文件配置](https://github.com/PaddlePaddle/PaddleRec/blob/master/doc/yaml.md)
 
@@ -410,7 +410,7 @@ python -u ~/PaddleRec/tools/trainer.py -m ~/PaddleRec/models/rank/deepfm/config_
 
 大致流程:
 
-<img src='./doc/imgs/Model prediction process.png' width=500>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/963ae43e82c7405d8decdcc8dc7d427d67c03e7a923649e6af175952d81025de' width=500>
 
  * 官方demo小量数据集
 
@@ -461,9 +461,9 @@ AUC面积（Area Under Curve），又称ROC曲线下的面积，它描述的是�
 python code/Visualize.py
 ```
 
-![](./doc/imgs/deepfm_infer_auc.png)
-![](./doc/imgs/deepfm_train_auc.png)
-![](./doc/imgs/deepfm_train_loss.png)
+<img src='https://ai-studio-static-online.cdn.bcebos.com/a88dd69c9c4641098538bbcc20c95e88a4732fd461aa4eb4a0d14935f475f5b9' width='400px'>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/9099b90cc4284cb9a7565c05e6a849ad770d9d189fbd43d48092356888431d4c' width='400px'>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/1b2d845bba8a4b2b81fec9f7f7769dccb7aa816c1c494ff084b2267f7f97c3b0' width='400px'>
 
 
 <a name="模型推理"></a>
@@ -473,7 +473,7 @@ python code/Visualize.py
 
 本项目采用DeepFM作为点击率的模型，模型推理需要经过如下环节：
 
-<img src='./doc/imgs/Reasoning process.png' width=600>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/a3af59cfa6994a68be0606000f6b1f7df504d4b549dc4c3f8148ca6ac2ca98cc' width=600>
 
 <br/>
 <br/>
@@ -560,7 +560,7 @@ GPU: NVIDIA Tesla V100 SXM2 32GB
 
 以本教程中```~/PaddleRec/models/rank/deepfm/config_bigdata.yaml```为例：
 
-<img src='./doc/imgs/Increase_training.png' width=400>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/9938168b940047cc84a73ec51757c9b791fc35b8a34b4811b9093f5242429339' width=400>
 
 
 | 迭代次数 | 训练loss | 训练auc | 预测auc |
@@ -578,7 +578,7 @@ Batch Size的大小影响模型的优化程度和速度。同时其直接影响�
 
 以本教程中```~/PaddleRec/models/rank/deepfm/config_bigdata.yaml```为例：
 
-<img src='./doc/imgs/Revise_batch_size.png' width=400>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/ce9e38e022b547ee9ead1c16c3a01c84403511218f854562885bfdeea9fb2023' width=400>
 
 | 批大小 | 训练loss | 训练auc | 预测auc |
 | ------ | ----------- | ------- | ------- |
@@ -598,7 +598,7 @@ Batch Size的大小影响模型的优化程度和速度。同时其直接影响�
 
 仍然以本教程中```~/PaddleRec/models/rank/deepfm/config_bigdata.yaml```为例：
 
-<img src='./doc/imgs/optimizer.png' width=400>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/abbb6f1785d04b2f811efb023d1d96af1785909bbedf4f8d99f380a56027890d' width=400>
 
 |   优化器  |  训练loss | 训练auc | 预测auc |
 | -------- | ----------- | -------- | --------- |
@@ -614,7 +614,7 @@ Batch Size的大小影响模型的优化程度和速度。同时其直接影响�
 
 仍然以本教程中```~/PaddleRec/models/rank/deepfm/config_bigdata.yaml```为例：
 
-<img src='./doc/imgs/optimizer.png' width=400>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/abbb6f1785d04b2f811efb023d1d96af1785909bbedf4f8d99f380a56027890d' width=400>
 
 | 学习率 | 训练loss | 训练auc | 预测auc |
 | ------ | ----------- | ------- | --------- |
@@ -646,7 +646,7 @@ Batch Size的大小影响模型的优化程度和速度。同时其直接影响�
 
 **大致流程:**
 
-<img src='./doc/imgs/Paddle Serving perspective.png' width=800>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/d171e5feac77492dbcaef3766e5899c0cff78039a88145aa914bd2bba44d5fcf' width=800>
 
 
 #### **使用paddle serving进行c++部署(在aistudio不能执行):**
@@ -752,15 +752,15 @@ GPU: NVIDIA 1050 4GB
 
  * post参数:
 
-<img src='./doc/imgs/post_deepfm_0.png' width=800>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/66b76b416af54bb89a043b34d308aa577f14414238314b57a739565fe5a9b948' width=800>
 
  * post Header参数:
 
-<img src='./doc/imgs/post_deepfm_1.png' width=800>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/09fc2a7d0372465db684524e66c2838efa82607c294e4f6a9b789890f55bcc1c' width=800>
 
  * post 文件参数(键记得改为文件类型):
 
-<img src='./doc/imgs/post_deepfm_2.png' width=800>
+<img src='https://ai-studio-static-online.cdn.bcebos.com/00947d6933684779b1ac6d10b1ac687924f0b36d0ab0471aabb34eb193e8c17b' width=800>
 
 #### 启动服务
 
