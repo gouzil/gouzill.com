@@ -4,7 +4,7 @@ date: 2022-10-17 23:19:15
 tags:
   - github
 keywords: github, dns
-description: 使用docker搭建hexo博客cicd环境实现自动部署
+description: 解决github访问问题
 ---
 
 # 为什么 Github 访问失败或者缓慢 ？
