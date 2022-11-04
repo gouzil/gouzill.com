@@ -9,11 +9,14 @@ categories:
   - 教程
 keywords: hexo,docker
 description: hexo个人博客docker搭建(1)
+cover: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
 ---
+
+hexo个人博客docker搭建(1), 用于发布前的页面测试和预览
 
 ### 使用dockerfile构建镜像
 
-```Dockerfile
+```dockerfile
 FROM node:15.7.0-alpine3.10
 
 WORKDIR /usr/blog

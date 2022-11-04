@@ -3,8 +3,11 @@ title: github国内访问慢
 date: 2022-10-17 23:19:15
 tags:
   - github
+categories:
+  - 教程
 keywords: github, dns
 description: 解决github访问问题
+cover: https://github.githubassets.com/images/modules/site/home-campaign/astrocat.png
 ---
 
 # 为什么 Github 访问失败或者缓慢 ？

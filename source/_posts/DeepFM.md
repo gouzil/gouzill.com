@@ -7,6 +7,7 @@ tags:
   - 推荐算法
 keywords: deepfm,机器学习,推荐算法
 description: 本项目使用推荐系统中的多个模型进行对比，并基于Criteo数据集完成对点击率模型的训练和预测。也是对点击率模型的学习。
+cover: https://picx1.zhimg.com/v2-57e5694bf343136ca3bc5586964ae901_1440w.jpg
 ---
 
 # Learn-DeepFM

@@ -9,6 +9,7 @@ categories:
   - 教程
 keywords: hexo,docker
 description: hexo个人博客docker搭建(2)
+cover: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
 ---
 
 #### 主题介绍

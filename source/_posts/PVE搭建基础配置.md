@@ -8,6 +8,7 @@ categories:
   - 教程
 keywords: PVE,debian
 description: pve的环境安装和基本配置
+cover: https://image.3001.net/images/20220806/16597433454688.jpg
 ---
 # 简介
 本教程适用于两个或以上网卡服务器配置PVE服务器

@@ -5,16 +5,16 @@
 # Site
 title: Hi,gouzi
 subtitle: ''
-description: ''
+description: '哪有什么岁月静好，只是有人为你负重前行'
 keywords:
-author: John Doe
+author: gouzi
 #language: en
-language: zh-Hans
-timezone: ''
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://gouzill.com
+url: http://www.gouzill.com
 # url: http://192.168.0.114:4000
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -103,7 +103,8 @@ ignore:
 ## Themes: https://hexo.io/themes/
 #theme: landscape
 #theme: next
-theme: hexo-theme-sagiri
+# theme: hexo-theme-sagiri
+theme: butterfly
 
 # hexo-hide-posts
 hide_posts:
@@ -142,3 +143,22 @@ live2d:
     vOffset: -50
   mobile:
     show: false
+
+aplayer:
+  meting: true
+  asset_inject: false
+
+search:
+  path: search.json
+  field: post
+  content: true
+  template: ./search.json
+
+# Extensions
+plugins:
+- hexo-generator-feed
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20

@@ -6,8 +6,10 @@ tags:
   - gitlab-runner
 keywords: gitlab-runner,gitlab
 description: 使用docker搭建hexo博客cicd环境实现自动部署
+cover: https://about.gitlab.com/images/blogimages/security-cover-new.png
 ---
 
+使用docker搭建hexo博客cicd环境实现自动部署, 自动更新到线上
 #### docker 部署
 
 ```dockerfile
