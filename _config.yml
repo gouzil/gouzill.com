@@ -8,14 +8,12 @@ subtitle: ''
 description: '哪有什么岁月静好，只是有人为你负重前行'
 keywords:
 author: gouzi
-#language: en
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://www.gouzill.com
-# url: http://192.168.0.114:4000
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -121,8 +119,7 @@ hide_posts:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    # repo: 'http://1w5s342781.wicp.vip/gouzi/gouzi-hexo.git'
-    repo: 'http://gitlab.gouzill.com/gouzi/gouzi-hexo.git'
+    repo: 'https://github.com/gouzil/gouzill.com.git'
 
 #Live2D动画
 live2d:
