@@ -1,18 +1,4 @@
 each url, icon in theme.social
-  //- 修改社交平台颜色
-  case trim(url.split('||')[1])
-    when "Email"
-      - var st="color: rgb(29, 156, 245)";
-    when "网易云音乐"
-      - var st="color: rgb(247, 88, 135)";
-    when "Github"
-      - var st="color: rgb(27, 31, 35)";
-    when "站点地图"
-      - var st="color: rgb(176, 61, 229)";
-    when "RSS 订阅"
-      - var st="color: rgb(252, 136, 12)";
-    default
-      - var st="color: rgb(27, 31, 35)";
-  a.social-icon(href=url_for(trim(url.split('||')[0])) target="_blank" rel="external nofollow noreferrer" style= st
+  a.social-icon(href=url_for(trim(url.split('||')[0])) target="_blank" 
   title=url.split('||')[1] === undefined ? '' : trim(url.split('||')[1]))
-    i(class=icon)
+    i(class=icon style=url.split('||')[2] === undefined ? '' : `color: ${trim(url.split('||')[2]).replace(/[\'\"]/g, '')};`)
