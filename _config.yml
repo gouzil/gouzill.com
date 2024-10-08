@@ -159,3 +159,5 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
+  template:
+    - ./source/custom.xml
