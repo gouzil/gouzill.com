@@ -2035,10 +2035,10 @@ hexo-tag-aplayer@^3.0.4:
     hexo-util "^0.1.7"
     meting "^1.2.0"
 
-hexo-theme-butterfly@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.2.1.tgz#ea162914cf57f4cfdba945d3829477dcb852c726"
-  integrity sha512-XhYSbvCcNRaK8fKpxGCadosK8A30BQe4YvvJWuYRTJ7Be6h3bzIcYgdgGPgpBrC5e8MLUfQ4PtJvQkhe0cUCOA==
+hexo-theme-butterfly@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.3.2.tgz#8f932ae69635d34e53be924892a0ba8c6a47f69d"
+  integrity sha512-yLDYSBlnDVHmGHRKzjgNOCYhayB/4c/ccbMoq1DX2uTgl46dDKWC87GViFwW4peU6Cn/p1R2Y2SwU6YmRqjMZA==
   dependencies:
     hexo-renderer-pug "^3.0.0"
     hexo-renderer-stylus "^3.0.1"
